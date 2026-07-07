@@ -11,7 +11,7 @@ class Gitl < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/akomyagin/gitl/releases/download/v0.3.0/gitl_0.3.0_darwin_amd64.tar.gz"
-      sha256 "e53f94511ca45923d3773ebf1dca64d6e5edbf8be350b5bd003f583ffa73a5ac"
+      sha256 "cfb4750457ce808140a4b59c9e1e67fb2286e0a3f6fa7620284b5d1a689afeab"
 
       define_method(:install) do
         bin.install "gitl"
@@ -19,7 +19,7 @@ class Gitl < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/akomyagin/gitl/releases/download/v0.3.0/gitl_0.3.0_darwin_arm64.tar.gz"
-      sha256 "2923ddd087b8526de96923565a7650caabd7dd2ac83891169677591d84f72ca6"
+      sha256 "bf796739d071dc408da848a761ef2dce45e8808731199ca400386df60296003f"
 
       define_method(:install) do
         bin.install "gitl"
@@ -30,14 +30,14 @@ class Gitl < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/akomyagin/gitl/releases/download/v0.3.0/gitl_0.3.0_linux_amd64.tar.gz"
-      sha256 "9470c42d021cc48701381762e8deab1d3272bf9cdb5361df9148d07cb638bc3f"
+      sha256 "4f8352cacf7b62a5091cf429d99154665c0ad96cde4ec1ce88f326ae937f8e37"
       define_method(:install) do
         bin.install "gitl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/akomyagin/gitl/releases/download/v0.3.0/gitl_0.3.0_linux_arm64.tar.gz"
-      sha256 "16059ab32cdd37f8ebb4a066501520c0708b27897086b18fe4420ac89668497e"
+      sha256 "75a53c77a607d535ac97863a47aa0091640514920794b55d1493cc6a223617a4"
       define_method(:install) do
         bin.install "gitl"
       end
