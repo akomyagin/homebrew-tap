@@ -5,21 +5,21 @@
 class Gitl < Formula
   desc "AI review of git commits with risk scoring (low|medium|high). BYOK: OpenAI, Ollama, Azure."
   homepage "https://github.com/akomyagin/gitl"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/akomyagin/gitl/releases/download/v0.6.0/gitl_0.6.0_darwin_amd64.tar.gz"
-      sha256 "5cb086e286d9d71bf9a407fa99f3b7104a0bcd188c5e9ea3d0b9e7e8578d1afa"
+      url "https://github.com/akomyagin/gitl/releases/download/v0.6.1/gitl_0.6.1_darwin_amd64.tar.gz"
+      sha256 "90510947d1fe4a41071d6eb60fe1899d5a712179925e613026d213fb294caf72"
 
       define_method(:install) do
         bin.install "gitl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/akomyagin/gitl/releases/download/v0.6.0/gitl_0.6.0_darwin_arm64.tar.gz"
-      sha256 "525d9c95aaf7eb9cbc2be1244500cb196e67848b67394450cbc74654a6f0e6df"
+      url "https://github.com/akomyagin/gitl/releases/download/v0.6.1/gitl_0.6.1_darwin_arm64.tar.gz"
+      sha256 "be3829fb58298576fa22bfc2cf27b7c9ab20a2bc58b2db551fcf58e2a34a7b4a"
 
       define_method(:install) do
         bin.install "gitl"
@@ -29,15 +29,15 @@ class Gitl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akomyagin/gitl/releases/download/v0.6.0/gitl_0.6.0_linux_amd64.tar.gz"
-      sha256 "0b1b1a1fe6d2528f290f33e50b5c0b6d3c506f6e607a5db9c840b6d7cd4e67d6"
+      url "https://github.com/akomyagin/gitl/releases/download/v0.6.1/gitl_0.6.1_linux_amd64.tar.gz"
+      sha256 "44c19c4b6e41c3ca156e7a5fc5c96b799be66e78d77dbbc66d5adc9c586efea3"
       define_method(:install) do
         bin.install "gitl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/akomyagin/gitl/releases/download/v0.6.0/gitl_0.6.0_linux_arm64.tar.gz"
-      sha256 "1f4d782eadcd87da6ea098043307c70880f4b0aa7ed2305bd4680317e438fcfd"
+      url "https://github.com/akomyagin/gitl/releases/download/v0.6.1/gitl_0.6.1_linux_arm64.tar.gz"
+      sha256 "93f39c4891692f519519dff5f5ed1265895aea2c3dff79028554c720a7f2a38d"
       define_method(:install) do
         bin.install "gitl"
       end
